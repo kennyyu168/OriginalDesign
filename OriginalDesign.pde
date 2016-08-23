@@ -4,14 +4,10 @@ void setup()
 }
 void draw()
 {
-  background();
+  background(94,172,255);
   chassis();
   sun();
   wheels();
-}
-void background()
-{
-  background(94,172,255);
 }
 void chassis()
 {
