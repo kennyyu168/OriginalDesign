@@ -5,10 +5,29 @@ void setup()
 void draw()
 {
   background(94,172,255);
+  trees();
+  ground();
   chassis();
   sun();
   wheels();
 }
+void trees()
+{ 
+  fill(5,115,25);
+  triangle(150,100,50,360,250,360);
+  fill(84,58,2);
+  rect(125,360,50,55);
+  fill(5,115,25);
+  triangle(350,100,250,360,450,360);
+  fill(84,58,2);
+  rect(325,360,50,55);
+  fill(5,115,25);
+  triangle(550,100,450,360,650,360);
+  fill(84,58,2);
+  rect(525,360,50,55);
+} 
+
+
 void chassis()
 {
   fill(0, 225, 120);
@@ -40,5 +59,13 @@ void wheels()
   ellipse(185,370,70,70);
   ellipse(455,370,70,70);
 }
+void ground()
+{
+  fill(41,41,41);
+  rect(0,415,640,480);
+}
+
+
+
 
 
